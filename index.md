@@ -21,6 +21,10 @@ background-image: linear-gradient(120deg, #9E5F7D, #A67794);
 .comparison_table {
   border: 1px solid;
 }
+
+.main-content h2 {
+  color: #78375F;
+}
 </style>
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/TAK7KavGivo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="max-width: 100%; position: relative; left: 50%; transform: translateX(-50%);"></iframe> -->
