@@ -1,0 +1,12 @@
+theme: jekyll-theme-cayman
+title: Continuous Levels of Detail for Light Field Networks
+description: '<div style="display: flex; flex-direction: row; color: #FFF; flex-wrap: wrap;">
+<a href="https://davidl.me" style="margin-left:1rem; flex-grow: 1; color: #FFF;">David Li</a>
+<a href="https://brandonyfeng.github.io/" style="margin-left:1rem; flex-grow: 1; color: #FFF;">Brandon Y. Feng</a>
+<a href="http://www.cs.umd.edu/~varshney/" style="margin-left:1rem; flex-grow: 1; color: #FFF;">Amitabh Varshney</a>
+</div>
+<p style="margin-bottom: -3rem;">
+<a href="https://bmvc2023.org/" style="color: #FFF;">34th British Machine Vision Conference (BMVC 2023)</a>
+</p>'
+github:
+  is_project_page: false
