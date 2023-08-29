@@ -6,7 +6,7 @@ description: '<div style="display: flex; flex-direction: row; color: #FFF; flex-
 <a href="http://www.cs.umd.edu/~varshney/" style="margin-left:1rem; flex-grow: 1; color: #FFF;">Amitabh Varshney</a>
 </div>
 <p style="margin-bottom: -3rem;">
-<a href="https://bmvc2023.org/" style="color: #FFF;">34th British Machine Vision Conference (BMVC 2023)</a>
+<a href="https://bmvc2023.org/" style="color: #FFF;">The 34th British Machine Vision Conference (BMVC 2023)</a>
 </p>'
 github:
   is_project_page: false
