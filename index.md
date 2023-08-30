@@ -26,7 +26,8 @@ background-image: linear-gradient(120deg, #9E5F7D, #A67794);
   border: 1px solid;
 }
 
-.main-content h2 {
+.main-content h2,
+.main-content h3 {
   color: #78375F;
 }
 
