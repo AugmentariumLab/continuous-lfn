@@ -57,11 +57,11 @@ Recently, several approaches have emerged for generating neural representations 
 ## Downloads
 (coming soon)
 
-<!-- <div style="display: flex; text-align:center; flex-direction: row; flex-wrap: wrap;">
-<div style="margin:1rem; flex-grow: 1;"><a href="#"><img style="max-width:10rem;" src="resources/paper.jpg"><br>Paper</a><br></div>
-<div style="margin:1rem; flex-grow: 1;"><a href="resources/supplementary.pdf"><img style="max-width:10rem;" src="resources/supplementary.jpg"><br>Supplementary</a></div>
-<div style="margin:1rem; flex-grow: 1;"><a href="https://github.com/AugmentariumLab/multiscale-lfn"><img style="max-width:10rem;" src="resources/github.jpg"><br>Code</a></div>
-</div> -->
+<div style="display: flex; text-align:center; flex-direction: row; flex-wrap: wrap;">
+<div style="margin:1rem; flex-grow: 1;"><a href="#"><img style="max-height:10rem;" src="resources/paper.jpg"><br>Paper</a><br></div>
+<div style="margin:1rem; flex-grow: 1;"><a href="#"><img style="max-height:10rem;" src="resources/supplementary.jpg"><br>Supplementary</a></div>
+<div style="margin:1rem; flex-grow: 1;"><a href="#"><img style="max-height:10rem;" src="resources/github.jpg"><br>Code</a></div>
+</div>
 
 
 ## Rendered Examples
@@ -158,16 +158,14 @@ Recently, several approaches have emerged for generating neural representations 
 </div>
 
 ## Citation
-(coming soon)
-
-<!-- ```bibtex
+```bibtex
 @inproceedings{li2023continuouslodlfn,
 author    = {David Li and Brandon Y. Feng and Amitabh Varshney},
 title     = {Continuous Levels of Detail for Light Field Networks},
 booktitle = {34th British Machine Vision Conference 2023, {BMVC} 2023},
-publisher = {{BMVA} Press},
+publisher = { {BMVA} Press},
 year      = {2023}
 }
 ```
 
-David Li, Brandon Y. Feng, and Amitabh Varshney. Continuous Levels of Detail for Light Field Networks. In 34th British Machine Vision Conference 2023 (BMVC 2023) -->
+David Li, Brandon Y. Feng, and Amitabh Varshney. Continuous Levels of Detail for Light Field Networks. In 34th British Machine Vision Conference 2023 (BMVC 2023)
