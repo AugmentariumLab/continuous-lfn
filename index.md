@@ -12,6 +12,10 @@ background-image: linear-gradient(120deg, #9E5F7D, #A67794);
     width: 12.4rem;
     object-fit: fill;
 }
+.main-content table {
+  width: fit-content;
+  margin: auto;
+}
 .main-content table th, .main-content table td {
     padding: 0;
 }
@@ -24,6 +28,21 @@ background-image: linear-gradient(120deg, #9E5F7D, #A67794);
 
 .main-content h2 {
   color: #78375F;
+}
+
+.main-content
+.table_cell_video {
+  max-width: 20rem;
+  max-height: 25rem;
+}
+
+.table_cell_video2 {
+  max-width: 24rem;
+  max-height: 25rem;
+}
+
+.text-center {
+  text-align: center;
 }
 </style>
 
@@ -44,197 +63,111 @@ Recently, several approaches have emerged for generating neural representations 
 <div style="margin:1rem; flex-grow: 1;"><a href="https://github.com/AugmentariumLab/multiscale-lfn"><img style="max-width:10rem;" src="resources/github.jpg"><br>Code</a></div>
 </div> -->
 
-<!-- 
+
 ## Rendered Examples
 
+### Discrete-scale LFN
 <div class='container'>
-  <a href="multiple_lfn_comparison.html" rel="noopener noreferrer">See also Multiple LFNs vs Multi-scale LFNs</a>
-  <br>
-  <table class="comparison_table" cellspacing="3">
-    <tr class="table_header">
-      <td>
-        Model
-      </td>
-      <td>
-        LOD 1 (1/8 scale)
-      </td>
-      <td>
-        LOD 2 (1/4 scale)
-      </td>
-      <td>
-        LOD 3 (1/2 scale)
-      </td>
-      <td>
-        LOD 4 (1/1 scale)
-      </td>
-    </tr>
-    <tr>
-      <td>Single-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset1/fullscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset1/fullscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset1/fullscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset1/fullscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
-    <tr>
-      <td>Multi-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset1/multiscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset1/multiscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset1/multiscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset1/multiscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
-    <tr>
-      <td>Single-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset2/fullscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset2/fullscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset2/fullscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset2/fullscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
-    <tr>
-      <td>Multi-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset2/multiscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset2/multiscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset2/multiscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset2/multiscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
-    <tr>
-      <td>Single-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset3/fullscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset3/fullscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset3/fullscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset3/fullscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
-    <tr>
-      <td>Multi-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset3/multiscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset3/multiscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset3/multiscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset3/multiscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
-    <tr>
-      <td>Single-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset4/fullscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset4/fullscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset4/fullscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset4/fullscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
-    <tr>
-      <td>Multi-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset4/multiscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset4/multiscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset4/multiscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset4/multiscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
-    <tr>
-      <td>Single-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset5/fullscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset5/fullscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset5/fullscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset5/fullscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
-    <tr>
-      <td>Multi-scale LFN</td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset5/multiscale_r8.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset5/multiscale_r4.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset5/multiscale_r2.mp4" type="video/mp4">
-      </video></td>
-      <td><video muted autoplay loop class="erp_image">
-        <source src="resources/videos/dataset5/multiscale_r1.mp4" type="video/mp4">
-      </video></td>
-    </tr>
+    With only four levels of detail, transitions between levels of detail involve larger jumps and require streaming in larger model deltas.
+    <!-- Flexbox version of the above table -->
+    <div class="text-center">
+      <img class="table_cell_video" src="resources/videos/multiscale_lfn/datasetA.gif" alt="">
+      <img class="table_cell_video" src="resources/videos/multiscale_lfn/datasetB.gif" alt="">
+      <img class="table_cell_video" src="resources/videos/multiscale_lfn/datasetC.gif" alt=""><br>
+      <img class="table_cell_video" src="resources/videos/multiscale_lfn/datasetD.gif" alt="">
+      <img class="table_cell_video" src="resources/videos/multiscale_lfn/datasetE.gif" alt="">
+    </div>
+</div>
+
+### Continuous LOD LFN
+<div class='container'>
+  With continous LODs, transitions between levels of detail are gradual and only require streaming an additional row and column of weights per layer.<br>
+  The following examples were rendered using our light field network with continuous levels of detail.<br>
+  The first column shows transitions across levels of detail from a fixed viewpoint<br>
+  The second column shows renders first at the highest level of detail and then at varying lower levels of detail.
+  <table class="table text-center table-bordered comparison-table" cellspacing="3">
+    <thead>
+      <tr>
+        <td class="table_header">Fixed Camera Transition</td>
+        <td class="table_header">Camera Loop + Transition</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <video class="table_cell_video" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/transitions/datasetA.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="table_cell_video2" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/loop_transition/datasetA.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <video class="table_cell_video" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/transitions/datasetB.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="table_cell_video2" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/loop_transition/datasetB.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <video class="table_cell_video" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/transitions/datasetC.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="table_cell_video2" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/loop_transition/datasetC.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <video class="table_cell_video" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/transitions/datasetD.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="table_cell_video2" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/loop_transition/datasetD.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <video class="table_cell_video" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/transitions/datasetE.mp4" type="video/mp4">
+          </video>
+        </td>
+        <td>
+          <video class="table_cell_video2" width="100%" height="100%" autoplay muted loop>
+            <source src="resources/videos/loop_transition/datasetE.mp4" type="video/mp4">
+          </video>
+        </td>
+      </tr>
+    </tbody>
   </table>
-</div> -->
+</div>
 
 ## Citation
 (coming soon)
 
 <!-- ```bibtex
-@inproceedings{li2022progressive,
-  author={Li, David and Varshney, Amitabh},
-  booktitle={2022 International Conference on 3D Vision (3DV)}, 
-  title={Progressive Multi-Scale Light Field Networks}, 
-  year={2022},
-  volume={},
-  number={},
-  pages={231-241},
-  doi={10.1109/3DV57658.2022.00035}
+@inproceedings{li2023continuouslodlfn,
+author    = {David Li and Brandon Y. Feng and Amitabh Varshney},
+title     = {Continuous Levels of Detail for Light Field Networks},
+booktitle = {34th British Machine Vision Conference 2023, {BMVC} 2023},
+publisher = {{BMVA} Press},
+year      = {2023}
 }
 ```
 
-David Li, and Amitabh Varshney. Progressive Multi-Scale Light Field Networks. In 2022 International Conference on 3D Vision (3DV), Prague, Czech Republic, 2022, pp. 231-241, doi: 10.1109/3DV57658.2022.00035. -->
+David Li, Brandon Y. Feng, and Amitabh Varshney. Continuous Levels of Detail for Light Field Networks. In 34th British Machine Vision Conference 2023 (BMVC 2023) -->
