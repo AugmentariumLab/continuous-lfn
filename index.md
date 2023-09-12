@@ -61,7 +61,7 @@ Recently, several approaches have emerged for generating neural representations 
 <div style="display: flex; text-align:center; flex-direction: row; flex-wrap: wrap;">
 <div style="margin:1rem; flex-grow: 1;"><a href="#"><img style="max-height:10rem;" src="resources/paper.jpg"><br>Paper</a><br></div>
 <div style="margin:1rem; flex-grow: 1;"><a href="#"><img style="max-height:10rem;" src="resources/supplementary.jpg"><br>Supplementary</a></div>
-<div style="margin:1rem; flex-grow: 1;"><a href="#"><img style="max-height:10rem;" src="resources/github.jpg"><br>Code</a></div>
+<div style="margin:1rem; flex-grow: 1;"><a href="https://github.com/AugmentariumLab/continuous-lfn"><img style="max-height:10rem;" src="resources/github.jpg"><br>Code</a></div>
 </div>
 
 
