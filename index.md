@@ -56,11 +56,11 @@ background-image: linear-gradient(120deg, #9E5F7D, #A67794);
 Recently, several approaches have emerged for generating neural representations with multiple levels of detail (LODs). LODs can improve the rendering by using lower resolutions and smaller model sizes when appropriate. However, existing methods generally focus on a few discrete LODs which suffer from aliasing and flicker artifacts as details are changed and limit their granularity for adapting to resource limitations. In this paper, we propose a method to encode light field networks with continuous LODs, allowing for finely tuned adaptations to rendering conditions. Our training procedure uses summed-area table filtering allowing efficient and continuous filtering at various LODs. Furthermore, we use saliency-based importance sampling which enables our light field networks to distribute their capacity, particularly limited at lower LODs, towards representing the details viewers are most likely to focus on. Incorporating continuous LODs into neural representations enables progressive streaming of neural representations, decreasing the latency and resource utilization for rendering.
 
 ## Downloads
-(coming soon)
 
 <div style="display: flex; text-align:center; flex-direction: row; flex-wrap: wrap;">
-<div style="margin:1rem; flex-grow: 1;"><a href="#"><img style="max-height:10rem;" src="resources/paper.jpg"><br>Paper</a><br></div>
-<div style="margin:1rem; flex-grow: 1;"><a href="#"><img style="max-height:10rem;" src="resources/supplementary.jpg"><br>Supplementary</a></div>
+<div style="margin:1rem; flex-grow: 1;"><a href="resources/Li_ContinuousLODLFN_BMVC2023.pdf"><img style="max-height:10rem;" src="resources/paper.jpg"><br>Paper</a><br></div>
+<div style="margin:1rem; flex-grow: 1;"><a href="resources/Li_ContinuousLODLFN_BMVC2023_supp.pdf"><img style="max-height:10rem;" src="resources/supplementary.jpg"><br>Supplementary</a></div>
+<div style="margin:1rem; flex-grow: 1;"><a href="https://docs.google.com/presentation/d/1qPv5JNmYCoCsg2RhgkqKvBuu2EHgg3cX5U14-lAQ7kU/edit?usp=sharing"><img style="max-height:10rem;" src="resources/poster.jpg"><br>Poster</a></div>
 <div style="margin:1rem; flex-grow: 1;"><a href="https://github.com/AugmentariumLab/continuous-lfn"><img style="max-height:10rem;" src="resources/github.jpg"><br>Code</a></div>
 </div>
 
