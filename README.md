@@ -32,7 +32,7 @@ If you get `CUBLAS_STATUS_EXECUTION_FAILED` while opening the viewer, try runnin
 author    = {David Li and Brandon Y. Feng and Amitabh Varshney},
 title     = {Continuous Levels of Detail for Light Field Networks},
 booktitle = {34th British Machine Vision Conference 2023, {BMVC} 2023},
-publisher = { {BMVA} Press},
+publisher = {{BMVA} Press},
 year      = {2023}
 }
 ```
