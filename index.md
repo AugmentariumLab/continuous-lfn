@@ -160,13 +160,13 @@ Recently, several approaches have emerged for generating neural representations 
 
 ## Citation
 ```bibtex
-@inproceedings{li2023continuouslodlfn,
+{% raw %}@inproceedings{li2023continuouslodlfn,
 author    = {David Li and Brandon Y. Feng and Amitabh Varshney},
 title     = {Continuous Levels of Detail for Light Field Networks},
 booktitle = {34th British Machine Vision Conference 2023, {BMVC} 2023},
-publisher = { {BMVA} Press},
+publisher = {{BMVA} Press},
 year      = {2023}
-}
+}{% endraw %}
 ```
 
 David Li, Brandon Y. Feng, and Amitabh Varshney. Continuous Levels of Detail for Light Field Networks. In 34th British Machine Vision Conference 2023 (BMVC 2023)
