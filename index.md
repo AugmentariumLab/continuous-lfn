@@ -172,3 +172,4 @@ year      = {2023}
 {% endraw %}
 
 David Li, Brandon Y. Feng, and Amitabh Varshney. Continuous Levels of Detail for Light Field Networks. In 34th British Machine Vision Conference 2023 (BMVC 2023)
+
