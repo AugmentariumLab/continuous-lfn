@@ -162,11 +162,12 @@ Recently, several approaches have emerged for generating neural representations 
 {% raw %}
 ```bibtex
 @inproceedings{li2023continuouslodlfn,
-author    = {David Li and Brandon Y. Feng and Amitabh Varshney},
+author    = {David Li and Brandon Yushan Feng and Amitabh Varshney},
 title     = {Continuous Levels of Detail for Light Field Networks},
-booktitle = {34th British Machine Vision Conference 2023, {BMVC} 2023},
-publisher = {{BMVA} Press},
-year      = {2023}
+booktitle = {34th British Machine Vision Conference 2023, {BMVC} 2023, Aberdeen, UK, November 20-24, 2023},
+publisher = {{BMVA}},
+year      = {2023},
+url       = {https://papers.bmvc2023.org/0139.pdf}
 }
 ```
 {% endraw %}
